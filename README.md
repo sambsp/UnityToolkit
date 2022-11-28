@@ -3,7 +3,7 @@ Collection of tech of Unity3d
 
 # 1, Position Camera to a target, after position, camera will lookat the target automatically
 
-```c++
+```c#
 // get the camera transform
 Transform cameraTransform = Global.Instance.FindMainCameraTransform();
 Debug.Assert(cameraTransform != null);
