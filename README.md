@@ -1,7 +1,7 @@
 # UnityToolkit
 Collection of tech of Unity3d
 
-# 1, Position Camera to a target, after position, camera will lookat the target automatically
+# 1, Locate camera to position, after that, camera will lookat the target automatically
 
 ```c#
 // get the camera transform
@@ -17,3 +17,13 @@ direction.Normalize();
 position -= direction * 5f;
 // set camera transform's position
 cameraTransform.position = position;
+
+# 2, GameObject Layer Mask
+// get a mask can be used in Physics.Raycast
+int LayerMask.GetMask(string[] layerNameArray);
+
+// get a layer integer from given name, need to use 1 << layer for Physics.Raycast using
+int LayerMask.LayerNameToLayer(string name);
+
+// get a layer name
+string LayerMask.LayerToName(int layer)
