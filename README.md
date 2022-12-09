@@ -27,3 +27,11 @@ int LayerMask.LayerNameToLayer(string name);
 
 // get a layer name
 string LayerMask.LayerToName(int layer)
+
+# 3, UI adaption
+
+You should have a design resolution first.
+Then you make a UI canvas, on the "Canvas Scaler" component, "UI Scale Mode" choose "Scale With Screen Size". Then fill Reference Resolution with your design resolution.
+
+Tip:
+if there is ScrollView with dynamic content, you should add your content, for example, one row, by using transform.SetParent(t, false);
