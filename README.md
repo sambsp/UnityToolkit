@@ -35,3 +35,14 @@ Then you make a UI canvas, on the "Canvas Scaler" component, "UI Scale Mode" cho
 
 Tip:
 if there is ScrollView with dynamic content, you should add your content, for example, one row, by using transform.SetParent(t, false);
+
+# 4, WebGL javascript
+
+You can customize your template by add a template to Assets/WebGL Templates folder, copy one folder from Unity Engine (for example, on mac, it's path is "Unity/PlaybackEngines/WebGLSupport/WebGL Templates"). And add <script src="">[file.js]</script> below unity's script tag. 
+
+In file.js, put your code there. For unityInstance, you can keep reference at callback of createUnityInstance, use window.unityInstance = unityInstance;
+Then at your file.js, you can use unityInstance as window.unityInstance anywhere.
+
+To call C# code, you use window.unityInstance.SendMessage()
+
+
