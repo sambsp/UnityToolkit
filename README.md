@@ -45,4 +45,12 @@ Then at your file.js, you can use unityInstance as window.unityInstance anywhere
 
 To call C# code, you use window.unityInstance.SendMessage()
 
+# 5, Unity Remote Debug
+
+To test 'touch' feature, Unity remote is a tool (application) to make thing easy. For iOS, download "Unity Remote 5" from appstore. Then
+a, in unity editor, switch active settings to iOS
+b, link iPhone/iPad with a wire to your PC. For sure, you can install iTunes to see whether you can see your device on the iTunes.
+c, unity editor, edit/project settings/editor, unity remote/device, should see Any iOS device and your iOS device name. Choose your iOS device.
+d, play, you can now see the screen sync to your device.
+
 
