@@ -23,7 +23,7 @@ cameraTransform.position = position;
 int LayerMask.GetMask(string[] layerNameArray);
 
 // get a layer integer from given name, need to use 1 << layer for Physics.Raycast using
-int LayerMask.LayerNameToLayer(string name);
+int LayerMask.NameToLayer(string name);
 
 // get a layer name
 string LayerMask.LayerToName(int layer)
